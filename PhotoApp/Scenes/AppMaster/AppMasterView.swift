@@ -15,7 +15,11 @@ struct AppMasterView: View {
         LocalizedContentView {
             switch rootView {
             case .splash:
-                UnImplmentedView()
+                Unwrap(viewModel.state.splashViewModel) {
+                    SplashView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             case .language:
                 UnImplmentedView()
             case .home:
