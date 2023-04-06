@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */; };
-		3C19BC1429DF852E002127A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC1329DF852E002127A4 /* ContentView.swift */; };
-		3C19BC1629DF852F002127A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C19BC1529DF852F002127A4 /* Assets.xcassets */; };
-		3C19BC1929DF852F002127A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C19BC1829DF852F002127A4 /* Preview Assets.xcassets */; };
 		3C19BC2329DF852F002127A4 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2229DF852F002127A4 /* PhotoAppTests.swift */; };
 		3C19BC2D29DF852F002127A4 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2C29DF852F002127A4 /* PhotoAppUITests.swift */; };
 		3C19BC2F29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */; };
@@ -36,9 +33,6 @@
 /* Begin PBXFileReference section */
 		3C19BC0E29DF852E002127A4 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppApp.swift; sourceTree = "<group>"; };
-		3C19BC1329DF852E002127A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3C19BC1529DF852F002127A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C19BC1829DF852F002127A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C19BC1E29DF852F002127A4 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19BC2229DF852F002127A4 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
 		3C19BC2829DF852F002127A4 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,19 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */,
-				3C19BC1329DF852E002127A4 /* ContentView.swift */,
-				3C19BC1529DF852F002127A4 /* Assets.xcassets */,
-				3C19BC1729DF852F002127A4 /* Preview Content */,
 			);
 			path = PhotoApp;
-			sourceTree = "<group>";
-		};
-		3C19BC1729DF852F002127A4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3C19BC1829DF852F002127A4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3C19BC2129DF852F002127A4 /* PhotoAppTests */ = {
@@ -231,8 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C19BC1929DF852F002127A4 /* Preview Assets.xcassets in Resources */,
-				3C19BC1629DF852F002127A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C19BC1429DF852E002127A4 /* ContentView.swift in Sources */,
 				3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +396,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhotoApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = EKK9M2H3G4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PhotoApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = EKK9M2H3G4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
