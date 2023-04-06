@@ -11,7 +11,7 @@ import SwiftUI
 struct PhotoAppApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            AppMasterView(viewModel: .init())
         }
     }
 }

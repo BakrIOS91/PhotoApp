@@ -4,10 +4,10 @@
 
 import Foundation
 
-public var kAppEnvironment: AppEnvironment = .staging
+let kAppEnvironment: AppEnvironment = .development
 
 // MARK: - kBaseURLComponents
-public var kBaseURLComponents: URLComponents {
+var kBaseURLComponents: URLComponents {
     var urlComponents = URLComponents()
     urlComponents.scheme = kScheme
     urlComponents.host = kHost
@@ -18,26 +18,42 @@ public var kBaseURLComponents: URLComponents {
 }
 
 // MARK: - kBaseURL
-public var kBaseURL: String = ""
+var kBaseURL: String {
+    return kBaseURLComponents.url?.absoluteString ?? ""
+}
 
 // MARK: - kScheme
-public var kScheme: String = ""
+var kScheme: String {
+    switch kAppEnvironment {
+    default: return "https"
+    }
+}
 
 // MARK: - kHost
-public var kHost: String = ""
+var kHost: String {
+    switch kAppEnvironment {
+    default: return "newsapi.org"
+    }
+}
 
 // MARK: - kPort
-public var kPort: Int? = nil
+var kPort: Int? {
+    switch kAppEnvironment {
+    default: return nil
+    }
+}
 
+// MARK: Detect if app in Preview Mode
 public var isInPreview: Bool {
     return ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
 }
 
-// MARK: - all requests key parameters
-public struct KeyParameters {
-    static let contentTypeKey = "Content-Type"
-    static let accept = "Accept"
-    static let applicationJson = "application/json"
-}
 
+// MARK: - all requests key parameters
+struct KeyParameters {
+    static var contentTypeKey = "Content-Type"
+    static var accept = "Accept"
+    static var applicationJson = "application/json"
+    static var acceptLanguage = "Accept-Language"
+}
 

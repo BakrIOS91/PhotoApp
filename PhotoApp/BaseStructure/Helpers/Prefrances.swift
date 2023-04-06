@@ -1,8 +1,5 @@
 //
 //  Prefrances.swift
-//  PhotoApp
-//
-//  Created by Bakr mohamed on 05/04/2023.
 //
 
 import SwiftUI
@@ -15,7 +12,7 @@ struct Preference<Value>: DynamicProperty {
     private let keyPath: ReferenceWritableKeyPath<Preferences, Value>
     private let preferences: Preferences = .shared
     
-    public init(
+    init(
         _ keyPath: ReferenceWritableKeyPath<Preferences, Value>
     ) {
         self.keyPath = keyPath
@@ -29,7 +26,7 @@ struct Preference<Value>: DynamicProperty {
         self.preferencesObserver = .init(publisher: publisher)
     }
     
-    public var wrappedValue: Value {
+    var wrappedValue: Value {
         get {
             preferences[keyPath: keyPath]
         }
@@ -39,7 +36,7 @@ struct Preference<Value>: DynamicProperty {
         }
     }
     
-    public var projectedValue: Binding<Value> {
+    var projectedValue: Binding<Value> {
         Binding(
             get: { wrappedValue },
             set: { wrappedValue = $0 }
@@ -55,7 +52,10 @@ final class Preferences {
     /// Sends through the changed key path whenever a change occurs.
     fileprivate var preferencesChangedSubject = PassthroughSubject<AnyKeyPath, Never>()
     
-    @UserDefault("Language")
+    @UserDefault(kAppLanguage)
     var locale: Locale? = .bestMatching
+    
+    @UserDefault(kAppRootView)
+    var rootView: AppRootView? = .splash
 }
 
