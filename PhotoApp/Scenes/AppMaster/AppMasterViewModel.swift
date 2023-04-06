@@ -12,7 +12,8 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
     struct State {
         
         //ViewModels
-        
+        var splashViewModel: SplashViewModel?
+
     }
     
     enum Action {
@@ -26,7 +27,7 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
     override func trigger(_ action: Action) {
         switch action {
         case .onAppear:
-            break
+            state.splashViewModel = .init()
         }
     }
     
