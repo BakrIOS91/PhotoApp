@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  PhotoApp
+
+  Created by Bakr mohamed on 07/04/2023.
+  
+*/
+//MARK: General Local
+"common_Retry" = "Retry";
+"common_UnImplemented" = "unImplemented";
+"common_PullToRefresh" = "Pull to Refresh";
+
+// MARK: - Error Views
+"error_No_Data_Found" = "No items to display";
+"error_No_Data_Description" = "Please try different keyword";
+"error_You_Are_Offline" = "You are offline";
+"error_Please_Check_Your_Internet_Connections" = "Please check your internet connection";
+"error_Server_Error" = "Server error";
+"error_Unexpected_Error" = "Error occurred";
+"error_Please_Try_Again_Later" = "Please try again later";
+"error_Not_Authorized" = "Not authorized";
+"error_You_Are_Not_Authorized" = "You are not authorized to access this page";
+
+//MARK: language Selection
+"ls_Please_Choose_Language" = "Please choose your desired Language";
+"en" = "English";
+"ar" = "Arabic";

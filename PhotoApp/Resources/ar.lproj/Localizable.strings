@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  PhotoApp
+
+  Created by Bakr mohamed on 07/04/2023.
+  
+*/
+//MARK: General Local
+"common_Retry" = "إعادة المحاولة";
+"common_UnImplemented" = "غير مُنفَذ";
+"common_PullToRefresh" = "اسحب للتحديث";
+
+// MARK: - Error Views
+"error_No_Data_Found" = "لا توجد بيانات لعرضها";
+"error_No_Data_Description" = "يرجى المحاولة باستخدام كلمة مفتاحية مختلفة";
+"error_You_Are_Offline" = "أنت غير متصل بالإنترنت";
+"error_Please_Check_Your_Internet_Connections" = "يرجى التحقق من اتصال الإنترنت الخاص بك";
+"error_Server_Error" = "خطأ في الخادم";
+"error_Unexpected_Error" = "حدث خطأ غير متوقع";
+"error_Please_Try_Again_Later" = "يرجى المحاولة مرة أخرى في وقت لاحق";
+"error_Not_Authorized" = "غير مصرح به";
+"error_You_Are_Not_Authorized" = "أنت غير مصرح لك بالوصول إلى هذه الصفحة";
+
+//MARK: language Selection
+"ls_Please_Choose_Language" = "يرجى اختيار اللغة المفضلة لديك";
+"en" = "الإنجليزية";
+"ar" = "العربية";
