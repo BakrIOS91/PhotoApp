@@ -5,6 +5,7 @@
 import Foundation
 
 public enum AppEnvironment: String,  CaseIterable {
+    case development = "Development"
     case staging = "Staging"
     case preproduction = "Preproduction"
     case production = "Production"

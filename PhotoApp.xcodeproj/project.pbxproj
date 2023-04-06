@@ -17,6 +17,16 @@
 		3C15FF7729DF87FB00C0F85C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C15FF6E29DF87FB00C0F85C /* Montserrat-Regular.ttf */; };
 		3C15FF7829DF87FB00C0F85C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C15FF6F29DF87FB00C0F85C /* Colors.xcassets */; };
 		3C15FF7B29DF884300C0F85C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C15FF7D29DF884300C0F85C /* Localizable.strings */; };
+		3C15FF8929DF8ABE00C0F85C /* WithViewSate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8229DF8ABE00C0F85C /* WithViewSate.swift */; };
+		3C15FF8A29DF8ABE00C0F85C /* UnImplmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8429DF8ABE00C0F85C /* UnImplmentedView.swift */; };
+		3C15FF8B29DF8ABE00C0F85C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8629DF8ABE00C0F85C /* ErrorView.swift */; };
+		3C15FF8C29DF8ABE00C0F85C /* Refresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8829DF8ABE00C0F85C /* Refresher.swift */; };
+		3C15FF9029DF8ADF00C0F85C /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8D29DF8ADF00C0F85C /* AppFont.swift */; };
+		3C15FF9129DF8ADF00C0F85C /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8E29DF8ADF00C0F85C /* AppEnums.swift */; };
+		3C15FF9229DF8ADF00C0F85C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF8F29DF8ADF00C0F85C /* AppConstants.swift */; };
+		3C15FF9929DF8B4600C0F85C /* AppMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF9529DF8B4600C0F85C /* AppMasterViewModel.swift */; };
+		3C15FF9A29DF8B4600C0F85C /* AppMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF9629DF8B4600C0F85C /* AppMasterView.swift */; };
+		3C15FF9B29DF8B4600C0F85C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C15FF9829DF8B4600C0F85C /* Launch Screen.storyboard */; };
 		3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */; };
 		3C19BC2329DF852F002127A4 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2229DF852F002127A4 /* PhotoAppTests.swift */; };
 		3C19BC2D29DF852F002127A4 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2C29DF852F002127A4 /* PhotoAppUITests.swift */; };
@@ -80,6 +90,16 @@
 		3C15FF6F29DF87FB00C0F85C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3C15FF7C29DF884300C0F85C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C15FF7E29DF884700C0F85C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C15FF8229DF8ABE00C0F85C /* WithViewSate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithViewSate.swift; sourceTree = "<group>"; };
+		3C15FF8429DF8ABE00C0F85C /* UnImplmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnImplmentedView.swift; sourceTree = "<group>"; };
+		3C15FF8629DF8ABE00C0F85C /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		3C15FF8829DF8ABE00C0F85C /* Refresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresher.swift; sourceTree = "<group>"; };
+		3C15FF8D29DF8ADF00C0F85C /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		3C15FF8E29DF8ADF00C0F85C /* AppEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		3C15FF8F29DF8ADF00C0F85C /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		3C15FF9529DF8B4600C0F85C /* AppMasterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMasterViewModel.swift; sourceTree = "<group>"; };
+		3C15FF9629DF8B4600C0F85C /* AppMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMasterView.swift; sourceTree = "<group>"; };
+		3C15FF9829DF8B4600C0F85C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3C19BC0E29DF852E002127A4 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppApp.swift; sourceTree = "<group>"; };
 		3C19BC1E29DF852F002127A4 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +166,9 @@
 		3C15FF6429DF87E600C0F85C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3C15FF8F29DF8ADF00C0F85C /* AppConstants.swift */,
+				3C15FF8E29DF8ADF00C0F85C /* AppEnums.swift */,
+				3C15FF8D29DF8ADF00C0F85C /* AppFont.swift */,
 				3C15FF7D29DF884300C0F85C /* Localizable.strings */,
 				3C15FF6F29DF87FB00C0F85C /* Colors.xcassets */,
 				3C15FF6529DF87FB00C0F85C /* Images.xcassets */,
@@ -176,6 +199,75 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		3C15FF8029DF8ABE00C0F85C /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF8129DF8ABE00C0F85C /* WithViewState */,
+				3C15FF8329DF8ABE00C0F85C /* UnImplementedView */,
+				3C15FF8529DF8ABE00C0F85C /* ErrorView */,
+				3C15FF8729DF8ABE00C0F85C /* Refresher */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		3C15FF8129DF8ABE00C0F85C /* WithViewState */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF8229DF8ABE00C0F85C /* WithViewSate.swift */,
+			);
+			path = WithViewState;
+			sourceTree = "<group>";
+		};
+		3C15FF8329DF8ABE00C0F85C /* UnImplementedView */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF8429DF8ABE00C0F85C /* UnImplmentedView.swift */,
+			);
+			path = UnImplementedView;
+			sourceTree = "<group>";
+		};
+		3C15FF8529DF8ABE00C0F85C /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF8629DF8ABE00C0F85C /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		3C15FF8729DF8ABE00C0F85C /* Refresher */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF8829DF8ABE00C0F85C /* Refresher.swift */,
+			);
+			path = Refresher;
+			sourceTree = "<group>";
+		};
+		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF9429DF8B4600C0F85C /* AppMaster */,
+				3C15FF9729DF8B4600C0F85C /* LauncScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C15FF9429DF8B4600C0F85C /* AppMaster */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF9529DF8B4600C0F85C /* AppMasterViewModel.swift */,
+				3C15FF9629DF8B4600C0F85C /* AppMasterView.swift */,
+			);
+			path = AppMaster;
+			sourceTree = "<group>";
+		};
+		3C15FF9729DF8B4600C0F85C /* LauncScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FF9829DF8B4600C0F85C /* Launch Screen.storyboard */,
+			);
+			path = LauncScreen;
+			sourceTree = "<group>";
+		};
 		3C19BC0529DF852E002127A4 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +291,8 @@
 		3C19BC1029DF852E002127A4 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				3C15FF9329DF8B1D00C0F85C /* Scenes */,
+				3C15FF8029DF8ABE00C0F85C /* Reusables */,
 				3C15FF6429DF87E600C0F85C /* Resources */,
 				3CC5723729DF864600B870EA /* BaseStructure */,
 				3CC5723529DF85C800B870EA /* App */,
@@ -415,6 +509,7 @@
 			files = (
 				3C15FF7629DF87FB00C0F85C /* Montserrat-Bold.ttf in Resources */,
 				3C15FF7529DF87FB00C0F85C /* Montserrat-Light.ttf in Resources */,
+				3C15FF9B29DF8B4600C0F85C /* Launch Screen.storyboard in Resources */,
 				3C15FF7429DF87FB00C0F85C /* Montserrat-Medium.ttf in Resources */,
 				3C15FF7B29DF884300C0F85C /* Localizable.strings in Resources */,
 				3C15FF7829DF87FB00C0F85C /* Colors.xcassets in Resources */,
@@ -466,19 +561,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC5722129DF85C000B870EA /* LocalizedContentView.swift in Sources */,
+				3C15FF9029DF8ADF00C0F85C /* AppFont.swift in Sources */,
+				3C15FF9129DF8ADF00C0F85C /* AppEnums.swift in Sources */,
 				3CC5721E29DF85C000B870EA /* NetworkConstants.swift in Sources */,
+				3C15FF8A29DF8ABE00C0F85C /* UnImplmentedView.swift in Sources */,
 				3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */,
+				3C15FF8929DF8ABE00C0F85C /* WithViewSate.swift in Sources */,
 				3C15FF7329DF87FB00C0F85C /* ImagesConstants.swift in Sources */,
 				3CC5722D29DF85C000B870EA /* Bundle+Ext.swift in Sources */,
 				3CC5722929DF85C000B870EA /* AnimateRedacted.swift in Sources */,
+				3C15FF9229DF8ADF00C0F85C /* AppConstants.swift in Sources */,
 				3CC5722A29DF85C000B870EA /* Dictionary+Ext.swift in Sources */,
+				3C15FF9929DF8B4600C0F85C /* AppMasterViewModel.swift in Sources */,
 				3CC5723229DF85C000B870EA /* Collection+Ext.swift in Sources */,
 				3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */,
+				3C15FF9A29DF8B4600C0F85C /* AppMasterView.swift in Sources */,
 				3CC5722229DF85C000B870EA /* ViewState.swift in Sources */,
 				3CC5723029DF85C000B870EA /* View+Ext.swift in Sources */,
 				3CC5722E29DF85C000B870EA /* String+Ext.swift in Sources */,
 				3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */,
 				3C15FF7129DF87FB00C0F85C /* StringsConstants.swift in Sources */,
+				3C15FF8C29DF8ABE00C0F85C /* Refresher.swift in Sources */,
 				3CC5722829DF85C000B870EA /* Unwrap.swift in Sources */,
 				3CC5722729DF85C000B870EA /* UserDefaults.swift in Sources */,
 				3CC5721D29DF85BF00B870EA /* NetworkMonitor.swift in Sources */,
@@ -488,6 +591,7 @@
 				3CC5722629DF85C000B870EA /* PublisherObservableObject.swift in Sources */,
 				3CC5722C29DF85C000B870EA /* Date+Ext.swift in Sources */,
 				3CC5721929DF85BF00B870EA /* BaseRequest.swift in Sources */,
+				3C15FF8B29DF8ABE00C0F85C /* ErrorView.swift in Sources */,
 				3CC5721C29DF85BF00B870EA /* ApiFetcher.swift in Sources */,
 				3CC5723129DF85C000B870EA /* Publisher+Ext.swift in Sources */,
 				3CC5722329DF85C000B870EA /* NetWorkHelper.swift in Sources */,
@@ -671,9 +775,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoApp/App/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -704,9 +808,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoApp/App/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
