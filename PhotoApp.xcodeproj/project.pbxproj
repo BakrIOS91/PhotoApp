@@ -29,6 +29,8 @@
 		3C15FF9B29DF8B4600C0F85C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C15FF9829DF8B4600C0F85C /* Launch Screen.storyboard */; };
 		3C15FF9F29DF8E6E00C0F85C /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF9D29DF8E6D00C0F85C /* SplashViewModel.swift */; };
 		3C15FFA029DF8E6E00C0F85C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FF9E29DF8E6D00C0F85C /* SplashView.swift */; };
+		3C15FFA429DF90C100C0F85C /* LanguageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FFA229DF90C100C0F85C /* LanguageSelectionView.swift */; };
+		3C15FFA529DF90C100C0F85C /* LanguageSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15FFA329DF90C100C0F85C /* LanguageSelectionViewModel.swift */; };
 		3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */; };
 		3C19BC2329DF852F002127A4 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2229DF852F002127A4 /* PhotoAppTests.swift */; };
 		3C19BC2D29DF852F002127A4 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2C29DF852F002127A4 /* PhotoAppUITests.swift */; };
@@ -104,6 +106,8 @@
 		3C15FF9829DF8B4600C0F85C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3C15FF9D29DF8E6D00C0F85C /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		3C15FF9E29DF8E6D00C0F85C /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		3C15FFA229DF90C100C0F85C /* LanguageSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionView.swift; sourceTree = "<group>"; };
+		3C15FFA329DF90C100C0F85C /* LanguageSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageSelectionViewModel.swift; sourceTree = "<group>"; };
 		3C19BC0E29DF852E002127A4 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19BC1129DF852E002127A4 /* PhotoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppApp.swift; sourceTree = "<group>"; };
 		3C19BC1E29DF852F002127A4 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +253,7 @@
 		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3C15FFA129DF90C100C0F85C /* Language Selection */,
 				3C15FF9C29DF8E6D00C0F85C /* Splash */,
 				3C15FF9429DF8B4600C0F85C /* AppMaster */,
 				3C15FF9729DF8B4600C0F85C /* LauncScreen */,
@@ -280,6 +285,15 @@
 				3C15FF9E29DF8E6D00C0F85C /* SplashView.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		3C15FFA129DF90C100C0F85C /* Language Selection */ = {
+			isa = PBXGroup;
+			children = (
+				3C15FFA229DF90C100C0F85C /* LanguageSelectionView.swift */,
+				3C15FFA329DF90C100C0F85C /* LanguageSelectionViewModel.swift */,
+			);
+			path = "Language Selection";
 			sourceTree = "<group>";
 		};
 		3C19BC0529DF852E002127A4 = {
@@ -605,6 +619,7 @@
 				3C15FF7229DF87FB00C0F85C /* ColorsConstants.swift in Sources */,
 				3CC5722529DF85C000B870EA /* Prefrances.swift in Sources */,
 				3CC5722629DF85C000B870EA /* PublisherObservableObject.swift in Sources */,
+				3C15FFA429DF90C100C0F85C /* LanguageSelectionView.swift in Sources */,
 				3CC5722C29DF85C000B870EA /* Date+Ext.swift in Sources */,
 				3CC5721929DF85BF00B870EA /* BaseRequest.swift in Sources */,
 				3C15FF8B29DF8ABE00C0F85C /* ErrorView.swift in Sources */,
@@ -616,6 +631,7 @@
 				3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */,
 				3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */,
 				3CC5722B29DF85C000B870EA /* Optional+Ext.swift in Sources */,
+				3C15FFA529DF90C100C0F85C /* LanguageSelectionViewModel.swift in Sources */,
 				3CC5722F29DF85C000B870EA /* Locale+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -796,6 +812,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,6 +846,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

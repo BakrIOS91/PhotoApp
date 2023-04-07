@@ -21,7 +21,11 @@ struct AppMasterView: View {
                     UnImplmentedView()
                 }
             case .language:
-                UnImplmentedView()
+                Unwrap(viewModel.state.languageSelectionViewModel) {
+                    LanguageSelectionView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             case .home:
                 UnImplmentedView()
             default:
@@ -30,6 +34,9 @@ struct AppMasterView: View {
         }
         .onAppear {
             viewModel.trigger(.onAppear)
+        }
+        .onChange(of: rootView) { _ in
+            viewModel.trigger(.reloadView)
         }
     }
 }

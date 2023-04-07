@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum AppRootView: Codable {
+enum AppRootView: Codable, Equatable {
     case splash
     case language
     case home

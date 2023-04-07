@@ -13,11 +13,13 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
         
         //ViewModels
         var splashViewModel: SplashViewModel?
+        var languageSelectionViewModel: LanguageSelectionViewModel?
 
     }
     
     enum Action {
         case onAppear
+        case reloadView
     }
     
     init() {
@@ -26,8 +28,18 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
     
     override func trigger(_ action: Action) {
         switch action {
-        case .onAppear:
+        case .onAppear, .reloadView:
+            loadViewModel()
+        }
+    }
+    
+    fileprivate func loadViewModel() {
+        switch Preferences.shared.rootView {
+        case .splash:
             state.splashViewModel = .init()
+        case .language:
+            state.languageSelectionViewModel = .init()
+        default: break
         }
     }
     
