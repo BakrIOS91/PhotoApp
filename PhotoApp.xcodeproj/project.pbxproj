@@ -35,6 +35,8 @@
 		3C19BC2329DF852F002127A4 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2229DF852F002127A4 /* PhotoAppTests.swift */; };
 		3C19BC2D29DF852F002127A4 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2C29DF852F002127A4 /* PhotoAppUITests.swift */; };
 		3C19BC2F29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */; };
+		3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8529E04438008126EE /* HomeTabView.swift */; };
+		3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8729E04763008126EE /* HomeTabViewModel.swift */; };
 		3CC5721929DF85BF00B870EA /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571F929DF85BF00B870EA /* BaseRequest.swift */; };
 		3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */; };
 		3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FB29DF85BF00B870EA /* AsyncImage.swift */; };
@@ -115,6 +117,8 @@
 		3C19BC2829DF852F002127A4 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C19BC2C29DF852F002127A4 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C36CC8529E04438008126EE /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		3C36CC8729E04763008126EE /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
 		3CC571F929DF85BF00B870EA /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
 		3CC571FB29DF85BF00B870EA /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3C36CC8429E0440D008126EE /* Home Tab View */,
 				3C15FFA129DF90C100C0F85C /* Language Selection */,
 				3C15FF9C29DF8E6D00C0F85C /* Splash */,
 				3C15FF9429DF8B4600C0F85C /* AppMaster */,
@@ -343,6 +348,15 @@
 				3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */,
 			);
 			path = PhotoAppUITests;
+			sourceTree = "<group>";
+		};
+		3C36CC8429E0440D008126EE /* Home Tab View */ = {
+			isa = PBXGroup;
+			children = (
+				3C36CC8529E04438008126EE /* HomeTabView.swift */,
+				3C36CC8729E04763008126EE /* HomeTabViewModel.swift */,
+			);
+			path = "Home Tab View";
 			sourceTree = "<group>";
 		};
 		3CC571F829DF85BF00B870EA /* Networking */ = {
@@ -609,8 +623,10 @@
 				3CC5722229DF85C000B870EA /* ViewState.swift in Sources */,
 				3CC5723029DF85C000B870EA /* View+Ext.swift in Sources */,
 				3CC5722E29DF85C000B870EA /* String+Ext.swift in Sources */,
+				3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */,
 				3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */,
 				3C15FF7129DF87FB00C0F85C /* StringsConstants.swift in Sources */,
+				3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */,
 				3C15FF8C29DF8ABE00C0F85C /* Refresher.swift in Sources */,
 				3CC5722829DF85C000B870EA /* Unwrap.swift in Sources */,
 				3CC5722729DF85C000B870EA /* UserDefaults.swift in Sources */,
