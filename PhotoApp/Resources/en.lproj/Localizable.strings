@@ -25,3 +25,7 @@
 "ls_Please_Choose_Language" = "Please choose your desired Language";
 "en" = "English";
 "ar" = "Arabic";
+
+// MARK: Home Tab View
+"tb_Explore" = "Explore";
+"tb_Settings" = "Settings";
