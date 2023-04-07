@@ -41,7 +41,6 @@
 		3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */; };
 		3CC5721929DF85BF00B870EA /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571F929DF85BF00B870EA /* BaseRequest.swift */; };
 		3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */; };
-		3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FB29DF85BF00B870EA /* AsyncImage.swift */; };
 		3CC5721C29DF85BF00B870EA /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */; };
 		3CC5721D29DF85BF00B870EA /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */; };
 		3CC5721E29DF85C000B870EA /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */; };
@@ -67,6 +66,13 @@
 		3CC5723229DF85C000B870EA /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721629DF85BF00B870EA /* Collection+Ext.swift */; };
 		3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */; };
 		3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721829DF85BF00B870EA /* Data+Ext.swift */; };
+		3CC9E20029E0A22900725FDB /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */; };
+		3CC9E20129E0A22900725FDB /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E1FF29E0A22900725FDB /* ExploreView.swift */; };
+		3CC9E20429E0AC0F00725FDB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */; };
+		3CC9E20729E0AC6200725FDB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20629E0AC6200725FDB /* PhotoCell.swift */; };
+		3CC9E20A29E0BFEF00725FDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3CC9E20929E0BFEF00725FDB /* Kingfisher */; };
+		3CC9E20D29E0C2C100725FDB /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */; };
+		3CC9E21029E0C48000725FDB /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20F29E0C48000725FDB /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +131,6 @@
 		3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3CC571F929DF85BF00B870EA /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
-		3CC571FB29DF85BF00B870EA /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiFetcher.swift; sourceTree = "<group>"; };
 		3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -152,6 +157,12 @@
 		3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormater+Ext.swift"; sourceTree = "<group>"; };
 		3CC5721829DF85BF00B870EA /* Data+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
 		3CC5724529DF870500B870EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		3CC9E1FF29E0A22900725FDB /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		3CC9E20629E0AC6200725FDB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		3CC9E20F29E0C48000725FDB /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC9E20A29E0BFEF00725FDB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +273,9 @@
 		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3C43CA2E29E04A7E00300777 /* SettingsView */,
-				3C36CC8429E0440D008126EE /* Home Tab View */,
+				3CC9E1FD29E0A1F400725FDB /* Explore */,
+				3C43CA2E29E04A7E00300777 /* Settings */,
+				3C36CC8429E0440D008126EE /* HomeTabBar */,
 				3C15FFA129DF90C100C0F85C /* Language Selection */,
 				3C15FF9C29DF8E6D00C0F85C /* Splash */,
 				3C15FF9429DF8B4600C0F85C /* AppMaster */,
@@ -330,8 +343,11 @@
 			isa = PBXGroup;
 			children = (
 				3C15FF9329DF8B1D00C0F85C /* Scenes */,
+				3CC9E20229E0ABEA00725FDB /* Model */,
 				3C15FF8029DF8ABE00C0F85C /* Reusables */,
 				3C15FF6429DF87E600C0F85C /* Resources */,
+				3CC9E20E29E0C46800725FDB /* Service */,
+				3CC9E20B29E0C28500725FDB /* Requests */,
 				3CC5723729DF864600B870EA /* BaseStructure */,
 				3CC5723529DF85C800B870EA /* App */,
 			);
@@ -355,22 +371,22 @@
 			path = PhotoAppUITests;
 			sourceTree = "<group>";
 		};
-		3C36CC8429E0440D008126EE /* Home Tab View */ = {
+		3C36CC8429E0440D008126EE /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				3C36CC8529E04438008126EE /* HomeTabView.swift */,
 				3C36CC8729E04763008126EE /* HomeTabViewModel.swift */,
 			);
-			path = "Home Tab View";
+			path = HomeTabBar;
 			sourceTree = "<group>";
 		};
-		3C43CA2E29E04A7E00300777 /* SettingsView */ = {
+		3C43CA2E29E04A7E00300777 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				3C43CA2F29E04A9E00300777 /* SettingView.swift */,
 				3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */,
 			);
-			path = SettingsView;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		3CC571F829DF85BF00B870EA /* Networking */ = {
@@ -378,7 +394,6 @@
 			children = (
 				3CC571F929DF85BF00B870EA /* BaseRequest.swift */,
 				3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */,
-				3CC571FB29DF85BF00B870EA /* AsyncImage.swift */,
 				3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */,
 				3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */,
 				3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */,
@@ -457,6 +472,48 @@
 			path = BaseStructure;
 			sourceTree = "<group>";
 		};
+		3CC9E1FD29E0A1F400725FDB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20529E0AC4E00725FDB /* Cell */,
+				3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */,
+				3CC9E1FF29E0A22900725FDB /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3CC9E20229E0ABEA00725FDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CC9E20529E0AC4E00725FDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20629E0AC6200725FDB /* PhotoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3CC9E20B29E0C28500725FDB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3CC9E20E29E0C46800725FDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20F29E0C48000725FDB /* PhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,6 +531,9 @@
 			dependencies = (
 			);
 			name = PhotoApp;
+			packageProductDependencies = (
+				3CC9E20929E0BFEF00725FDB /* Kingfisher */,
+			);
 			productName = PhotoApp;
 			productReference = 3C19BC0E29DF852E002127A4 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -547,6 +607,9 @@
 				ar,
 			);
 			mainGroup = 3C19BC0529DF852E002127A4;
+			packageReferences = (
+				3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3C19BC0F29DF852E002127A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -623,7 +686,6 @@
 				3C15FF9F29DF8E6E00C0F85C /* SplashViewModel.swift in Sources */,
 				3CC5721E29DF85C000B870EA /* NetworkConstants.swift in Sources */,
 				3C15FF8A29DF8ABE00C0F85C /* UnImplmentedView.swift in Sources */,
-				3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */,
 				3C15FF8929DF8ABE00C0F85C /* WithViewSate.swift in Sources */,
 				3C15FF7329DF87FB00C0F85C /* ImagesConstants.swift in Sources */,
 				3CC5722D29DF85C000B870EA /* Bundle+Ext.swift in Sources */,
@@ -632,6 +694,7 @@
 				3CC5722A29DF85C000B870EA /* Dictionary+Ext.swift in Sources */,
 				3C15FF9929DF8B4600C0F85C /* AppMasterViewModel.swift in Sources */,
 				3CC5723229DF85C000B870EA /* Collection+Ext.swift in Sources */,
+				3CC9E20D29E0C2C100725FDB /* PhotoRequest.swift in Sources */,
 				3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */,
 				3C15FF9A29DF8B4600C0F85C /* AppMasterView.swift in Sources */,
 				3CC5722229DF85C000B870EA /* ViewState.swift in Sources */,
@@ -660,10 +723,15 @@
 				3CC5722329DF85C000B870EA /* NetWorkHelper.swift in Sources */,
 				3CC5721F29DF85C000B870EA /* BaseViewModel.swift in Sources */,
 				3CC5722429DF85C000B870EA /* Helpers.swift in Sources */,
+				3CC9E21029E0C48000725FDB /* PhotoService.swift in Sources */,
 				3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */,
 				3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */,
+				3CC9E20729E0AC6200725FDB /* PhotoCell.swift in Sources */,
+				3CC9E20129E0A22900725FDB /* ExploreView.swift in Sources */,
+				3CC9E20029E0A22900725FDB /* ExploreViewModel.swift in Sources */,
 				3CC5722B29DF85C000B870EA /* Optional+Ext.swift in Sources */,
 				3C15FFA529DF90C100C0F85C /* LanguageSelectionViewModel.swift in Sources */,
+				3CC9E20429E0AC0F00725FDB /* PhotoModel.swift in Sources */,
 				3CC5722F29DF85C000B870EA /* Locale+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1011,6 +1079,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CC9E20929E0BFEF00725FDB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C19BC0629DF852E002127A4 /* Project object */;
 }

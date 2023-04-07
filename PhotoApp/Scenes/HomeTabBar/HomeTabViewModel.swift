@@ -12,6 +12,7 @@ class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.A
         
         //ViewModels
         var settingViewModel: SettingsViewModel?
+        var exploreViewModel: ExploreViewModel?
     }
     
     enum Action {
@@ -31,5 +32,6 @@ class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.A
     
     fileprivate func loadViewModels() {
         state.settingViewModel = .init()
+        state.exploreViewModel = .init()
     }
 }

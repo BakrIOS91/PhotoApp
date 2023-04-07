@@ -32,7 +32,7 @@ var kScheme: String {
 // MARK: - kHost
 var kHost: String {
     switch kAppEnvironment {
-    default: return "newsapi.org"
+    default: return "picsum.photos"
     }
 }
 

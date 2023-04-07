@@ -6,14 +6,14 @@ import Foundation
 
 public protocol Fetcher {
     @discardableResult
-    func fetch<Request> (request: Request) async -> Result<Request.Response, NetworkError> where Request : BaseRequestProtocol
+    func fetch<Request> (request: Request) async -> Result<Request.Response?, NetworkError> where Request : BaseRequestProtocol
 }
 
 
 public final class APIFetcher: Fetcher {
     static let shared = APIFetcher()
 
-    public func fetch<Request> (request: Request) async -> Result<Request.Response, NetworkError> where Request : BaseRequestProtocol {
+    public func fetch<Request> (request: Request) async -> Result<Request.Response?, NetworkError> where Request : BaseRequestProtocol {
         if isInPreview {
             return .success(request.mockResponse)
         } else {
