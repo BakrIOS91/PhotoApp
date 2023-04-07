@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    
+    @ObservedObject var viewModel: HomeTabViewModel
+    
     var body: some View {
         TabView {
             UnImplmentedView()
@@ -26,7 +29,7 @@ struct HomeTabView: View {
 struct HomeTabView_Previews: PreviewProvider {
     static var previews: some View {
         LocalePreview {
-            HomeTabView()
+            HomeTabView(viewModel: .init())
         }
     }
 }

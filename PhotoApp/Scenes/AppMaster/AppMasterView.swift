@@ -27,7 +27,11 @@ struct AppMasterView: View {
                     UnImplmentedView()
                 }
             case .home:
-                UnImplmentedView()
+                Unwrap(viewModel.state.homeTabViewModel) {
+                    HomeTabView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             default:
                 UnImplmentedView()
             }

@@ -14,7 +14,7 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
         //ViewModels
         var splashViewModel: SplashViewModel?
         var languageSelectionViewModel: LanguageSelectionViewModel?
-
+        var homeTabViewModel: HomeTabViewModel?
     }
     
     enum Action {
@@ -39,6 +39,8 @@ class AppMasterViewModel: BaseViewModel<AppMasterViewModel.State, AppMasterViewM
             state.splashViewModel = .init()
         case .language:
             state.languageSelectionViewModel = .init()
+        case .home:
+            state.homeTabViewModel = .init()
         default: break
         }
     }
