@@ -29,3 +29,6 @@
 // MARK: Home Tab View
 "tb_Explore" = "Explore";
 "tb_Settings" = "Settings";
+
+// MARK: Setting View
+"settings_CurrentLanguages" = "Current Language";

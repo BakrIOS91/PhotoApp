@@ -18,10 +18,17 @@ struct HomeTabView: View {
                     Label(Str.tbExplore.key, systemImage: "map.fill")
                 }
             
-            UnImplmentedView()
-                .tabItem {
-                    Label(Str.tbSettings.key, systemImage: "gear")
-                }
+            Unwrap(viewModel.state.settingViewModel){
+                SettingView(viewModel: $0)
+            } fallbackContent: {
+                UnImplmentedView()
+            }
+            .tabItem {
+                Label(Str.tbSettings.key, systemImage: "gear")
+            }
+        }
+        .onAppear {
+            viewModel.trigger(.onAppear)
         }
     }
 }

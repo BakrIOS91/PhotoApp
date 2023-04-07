@@ -13,7 +13,7 @@ struct AppMasterView: View {
     
     var body: some View {
         LocalizedContentView {
-            switch rootView {
+            switch rootView ?? .splash {
             case .splash:
                 Unwrap(viewModel.state.splashViewModel) {
                     SplashView(viewModel: $0)
@@ -32,15 +32,10 @@ struct AppMasterView: View {
                 } fallbackContent: {
                     UnImplmentedView()
                 }
-            default:
-                UnImplmentedView()
             }
         }
-        .onAppear {
-            viewModel.trigger(.onAppear)
-        }
-        .onChange(of: rootView) { _ in
-            viewModel.trigger(.reloadView)
+        .onChange(of: rootView) { rootView in
+            viewModel.trigger(.loadView(rootView))
         }
     }
 }

@@ -8,11 +8,10 @@
 import Foundation
 class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.Action>, NetworkHelper {
     
-    @Preference(\.rootView) var rootView
-    
     struct State {
         
         //ViewModels
+        var settingViewModel: SettingsViewModel?
     }
     
     enum Action {
@@ -26,7 +25,11 @@ class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.A
     override func trigger(_ action: Action) {
         switch action {
         case .onAppear:
-            break
+            loadViewModels()
         }
+    }
+    
+    fileprivate func loadViewModels() {
+        state.settingViewModel = .init()
     }
 }

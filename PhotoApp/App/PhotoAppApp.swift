@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct PhotoAppApp: App {
+    @Preference(\.locale) var locale
+    
+    init(){
+        NetworkMonitor.shared.startMonitoring()
+        self.locale = Locale(identifier: Bundle.main.preferredLocalizations.first ?? "en")
+    }
+    
     var body: some Scene {
         WindowGroup {
             AppMasterView(viewModel: .init())
