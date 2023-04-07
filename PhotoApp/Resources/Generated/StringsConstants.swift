@@ -35,6 +35,8 @@ public enum Str {
   public static let errorYouAreOffline = LocalizedString(table: "Localizable", lookupKey: "error_You_Are_Offline")
   /// Please choose your desired Language
   public static let lsPleaseChooseLanguage = LocalizedString(table: "Localizable", lookupKey: "ls_Please_Choose_Language")
+  /// Current Language
+  public static let settingsCurrentLanguages = LocalizedString(table: "Localizable", lookupKey: "settings_CurrentLanguages")
   /// Explore
   public static let tbExplore = LocalizedString(table: "Localizable", lookupKey: "tb_Explore")
   /// Settings

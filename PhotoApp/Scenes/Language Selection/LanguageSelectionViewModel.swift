@@ -28,7 +28,6 @@ class LanguageSelectionViewModel: BaseViewModel<LanguageSelectionViewModel.State
     override func trigger(_ action: Action) {
         switch action {
         case let .didSelectLanguage(locale):
-            debugPrint(locale.identifier)
             self.locale = locale
             Bundle.setLanguage(language: locale.identifier)
             rootView = .home
