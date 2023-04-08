@@ -39,9 +39,13 @@
 		3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8729E04763008126EE /* HomeTabViewModel.swift */; };
 		3C43CA3029E04A9E00300777 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA2F29E04A9E00300777 /* SettingView.swift */; };
 		3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */; };
+		3C6E52E429E0F2D900DD51F1 /* vodafone_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */; };
+		3C6E52E529E0F2D900DD51F1 /* vodafone_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E229E0F2D900DD51F1 /* vodafone_1.gif */; };
+		3C6E52E729E0F30300DD51F1 /* vodafone_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E629E0F30300DD51F1 /* vodafone_3.gif */; };
+		3C6E52E929E0F32100DD51F1 /* AdsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E52E829E0F32100DD51F1 /* AdsCell.swift */; };
+		3C6E52EB29E0F4D500DD51F1 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E52EA29E0F4D500DD51F1 /* Array+Ext.swift */; };
 		3CC5721929DF85BF00B870EA /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571F929DF85BF00B870EA /* BaseRequest.swift */; };
 		3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */; };
-		3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FB29DF85BF00B870EA /* AsyncImage.swift */; };
 		3CC5721C29DF85BF00B870EA /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */; };
 		3CC5721D29DF85BF00B870EA /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */; };
 		3CC5721E29DF85C000B870EA /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */; };
@@ -67,6 +71,13 @@
 		3CC5723229DF85C000B870EA /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721629DF85BF00B870EA /* Collection+Ext.swift */; };
 		3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */; };
 		3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5721829DF85BF00B870EA /* Data+Ext.swift */; };
+		3CC9E20029E0A22900725FDB /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */; };
+		3CC9E20129E0A22900725FDB /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E1FF29E0A22900725FDB /* ExploreView.swift */; };
+		3CC9E20429E0AC0F00725FDB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */; };
+		3CC9E20729E0AC6200725FDB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20629E0AC6200725FDB /* PhotoCell.swift */; };
+		3CC9E20A29E0BFEF00725FDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3CC9E20929E0BFEF00725FDB /* Kingfisher */; };
+		3CC9E20D29E0C2C100725FDB /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */; };
+		3CC9E21029E0C48000725FDB /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9E20F29E0C48000725FDB /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +134,13 @@
 		3C36CC8729E04763008126EE /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
 		3C43CA2F29E04A9E00300777 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_2.gif; sourceTree = "<group>"; };
+		3C6E52E229E0F2D900DD51F1 /* vodafone_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_1.gif; sourceTree = "<group>"; };
+		3C6E52E629E0F30300DD51F1 /* vodafone_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_3.gif; sourceTree = "<group>"; };
+		3C6E52E829E0F32100DD51F1 /* AdsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCell.swift; sourceTree = "<group>"; };
+		3C6E52EA29E0F4D500DD51F1 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		3CC571F929DF85BF00B870EA /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
-		3CC571FB29DF85BF00B870EA /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiFetcher.swift; sourceTree = "<group>"; };
 		3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -152,6 +167,12 @@
 		3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormater+Ext.swift"; sourceTree = "<group>"; };
 		3CC5721829DF85BF00B870EA /* Data+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
 		3CC5724529DF870500B870EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		3CC9E1FF29E0A22900725FDB /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		3CC9E20629E0AC6200725FDB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		3CC9E20F29E0C48000725FDB /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC9E20A29E0BFEF00725FDB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +204,7 @@
 		3C15FF6429DF87E600C0F85C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3C6E52DF29E0F2CE00DD51F1 /* Gifs */,
 				3C15FF8F29DF8ADF00C0F85C /* AppConstants.swift */,
 				3C15FF8E29DF8ADF00C0F85C /* AppEnums.swift */,
 				3C15FF8D29DF8ADF00C0F85C /* AppFont.swift */,
@@ -261,8 +284,9 @@
 		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3C43CA2E29E04A7E00300777 /* SettingsView */,
-				3C36CC8429E0440D008126EE /* Home Tab View */,
+				3CC9E1FD29E0A1F400725FDB /* Explore */,
+				3C43CA2E29E04A7E00300777 /* Settings */,
+				3C36CC8429E0440D008126EE /* HomeTabBar */,
 				3C15FFA129DF90C100C0F85C /* Language Selection */,
 				3C15FF9C29DF8E6D00C0F85C /* Splash */,
 				3C15FF9429DF8B4600C0F85C /* AppMaster */,
@@ -330,8 +354,11 @@
 			isa = PBXGroup;
 			children = (
 				3C15FF9329DF8B1D00C0F85C /* Scenes */,
+				3CC9E20229E0ABEA00725FDB /* Model */,
 				3C15FF8029DF8ABE00C0F85C /* Reusables */,
 				3C15FF6429DF87E600C0F85C /* Resources */,
+				3CC9E20E29E0C46800725FDB /* Service */,
+				3CC9E20B29E0C28500725FDB /* Requests */,
 				3CC5723729DF864600B870EA /* BaseStructure */,
 				3CC5723529DF85C800B870EA /* App */,
 			);
@@ -355,22 +382,32 @@
 			path = PhotoAppUITests;
 			sourceTree = "<group>";
 		};
-		3C36CC8429E0440D008126EE /* Home Tab View */ = {
+		3C36CC8429E0440D008126EE /* HomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
 				3C36CC8529E04438008126EE /* HomeTabView.swift */,
 				3C36CC8729E04763008126EE /* HomeTabViewModel.swift */,
 			);
-			path = "Home Tab View";
+			path = HomeTabBar;
 			sourceTree = "<group>";
 		};
-		3C43CA2E29E04A7E00300777 /* SettingsView */ = {
+		3C43CA2E29E04A7E00300777 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				3C43CA2F29E04A9E00300777 /* SettingView.swift */,
 				3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */,
 			);
-			path = SettingsView;
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3C6E52DF29E0F2CE00DD51F1 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				3C6E52E229E0F2D900DD51F1 /* vodafone_1.gif */,
+				3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */,
+				3C6E52E629E0F30300DD51F1 /* vodafone_3.gif */,
+			);
+			path = Gifs;
 			sourceTree = "<group>";
 		};
 		3CC571F829DF85BF00B870EA /* Networking */ = {
@@ -378,7 +415,6 @@
 			children = (
 				3CC571F929DF85BF00B870EA /* BaseRequest.swift */,
 				3CC571FA29DF85BF00B870EA /* NetworkEnums.swift */,
-				3CC571FB29DF85BF00B870EA /* AsyncImage.swift */,
 				3CC571FC29DF85BF00B870EA /* ApiFetcher.swift */,
 				3CC571FD29DF85BF00B870EA /* NetworkMonitor.swift */,
 				3CC571FE29DF85BF00B870EA /* NetworkConstants.swift */,
@@ -432,6 +468,7 @@
 				3CC5721629DF85BF00B870EA /* Collection+Ext.swift */,
 				3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */,
 				3CC5721829DF85BF00B870EA /* Data+Ext.swift */,
+				3C6E52EA29E0F4D500DD51F1 /* Array+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -457,6 +494,49 @@
 			path = BaseStructure;
 			sourceTree = "<group>";
 		};
+		3CC9E1FD29E0A1F400725FDB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20529E0AC4E00725FDB /* Cell */,
+				3CC9E1FE29E0A22900725FDB /* ExploreViewModel.swift */,
+				3CC9E1FF29E0A22900725FDB /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3CC9E20229E0ABEA00725FDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20329E0AC0F00725FDB /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CC9E20529E0AC4E00725FDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20629E0AC6200725FDB /* PhotoCell.swift */,
+				3C6E52E829E0F32100DD51F1 /* AdsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3CC9E20B29E0C28500725FDB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20C29E0C2C100725FDB /* PhotoRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3CC9E20E29E0C46800725FDB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E20F29E0C48000725FDB /* PhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,6 +554,9 @@
 			dependencies = (
 			);
 			name = PhotoApp;
+			packageProductDependencies = (
+				3CC9E20929E0BFEF00725FDB /* Kingfisher */,
+			);
 			productName = PhotoApp;
 			productReference = 3C19BC0E29DF852E002127A4 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -547,6 +630,9 @@
 				ar,
 			);
 			mainGroup = 3C19BC0529DF852E002127A4;
+			packageReferences = (
+				3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3C19BC0F29DF852E002127A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -564,12 +650,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C15FF7629DF87FB00C0F85C /* Montserrat-Bold.ttf in Resources */,
+				3C6E52E729E0F30300DD51F1 /* vodafone_3.gif in Resources */,
 				3C15FF7529DF87FB00C0F85C /* Montserrat-Light.ttf in Resources */,
 				3C15FF9B29DF8B4600C0F85C /* Launch Screen.storyboard in Resources */,
 				3C15FF7429DF87FB00C0F85C /* Montserrat-Medium.ttf in Resources */,
 				3C15FF7B29DF884300C0F85C /* Localizable.strings in Resources */,
 				3C15FF7829DF87FB00C0F85C /* Colors.xcassets in Resources */,
+				3C6E52E429E0F2D900DD51F1 /* vodafone_2.gif in Resources */,
 				3C15FF7729DF87FB00C0F85C /* Montserrat-Regular.ttf in Resources */,
+				3C6E52E529E0F2D900DD51F1 /* vodafone_1.gif in Resources */,
 				3C15FF7029DF87FB00C0F85C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,9 +710,9 @@
 				3C15FF9029DF8ADF00C0F85C /* AppFont.swift in Sources */,
 				3C15FF9129DF8ADF00C0F85C /* AppEnums.swift in Sources */,
 				3C15FF9F29DF8E6E00C0F85C /* SplashViewModel.swift in Sources */,
+				3C6E52E929E0F32100DD51F1 /* AdsCell.swift in Sources */,
 				3CC5721E29DF85C000B870EA /* NetworkConstants.swift in Sources */,
 				3C15FF8A29DF8ABE00C0F85C /* UnImplmentedView.swift in Sources */,
-				3CC5721B29DF85BF00B870EA /* AsyncImage.swift in Sources */,
 				3C15FF8929DF8ABE00C0F85C /* WithViewSate.swift in Sources */,
 				3C15FF7329DF87FB00C0F85C /* ImagesConstants.swift in Sources */,
 				3CC5722D29DF85C000B870EA /* Bundle+Ext.swift in Sources */,
@@ -632,10 +721,12 @@
 				3CC5722A29DF85C000B870EA /* Dictionary+Ext.swift in Sources */,
 				3C15FF9929DF8B4600C0F85C /* AppMasterViewModel.swift in Sources */,
 				3CC5723229DF85C000B870EA /* Collection+Ext.swift in Sources */,
+				3CC9E20D29E0C2C100725FDB /* PhotoRequest.swift in Sources */,
 				3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */,
 				3C15FF9A29DF8B4600C0F85C /* AppMasterView.swift in Sources */,
 				3CC5722229DF85C000B870EA /* ViewState.swift in Sources */,
 				3CC5723029DF85C000B870EA /* View+Ext.swift in Sources */,
+				3C6E52EB29E0F4D500DD51F1 /* Array+Ext.swift in Sources */,
 				3CC5722E29DF85C000B870EA /* String+Ext.swift in Sources */,
 				3C43CA3029E04A9E00300777 /* SettingView.swift in Sources */,
 				3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */,
@@ -660,10 +751,15 @@
 				3CC5722329DF85C000B870EA /* NetWorkHelper.swift in Sources */,
 				3CC5721F29DF85C000B870EA /* BaseViewModel.swift in Sources */,
 				3CC5722429DF85C000B870EA /* Helpers.swift in Sources */,
+				3CC9E21029E0C48000725FDB /* PhotoService.swift in Sources */,
 				3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */,
 				3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */,
+				3CC9E20729E0AC6200725FDB /* PhotoCell.swift in Sources */,
+				3CC9E20129E0A22900725FDB /* ExploreView.swift in Sources */,
+				3CC9E20029E0A22900725FDB /* ExploreViewModel.swift in Sources */,
 				3CC5722B29DF85C000B870EA /* Optional+Ext.swift in Sources */,
 				3C15FFA529DF90C100C0F85C /* LanguageSelectionViewModel.swift in Sources */,
+				3CC9E20429E0AC0F00725FDB /* PhotoModel.swift in Sources */,
 				3CC5722F29DF85C000B870EA /* Locale+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +859,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -817,7 +913,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -842,9 +938,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -876,9 +974,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1011,6 +1111,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CC9E20929E0BFEF00725FDB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CC9E20829E0BFEF00725FDB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C19BC0629DF852E002127A4 /* Project object */;
 }

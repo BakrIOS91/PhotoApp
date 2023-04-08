@@ -10,7 +10,7 @@ import SwiftUI
 public struct AnimateRedacted: AnimatableModifier {
     @State private var isAnim: Bool = false
     private var center = (UIScreen.main.bounds.width / 2) + 110
-    private let animation: Animation = .linear(duration: 1)
+    private let animation: Animation = .linear(duration: 2)
 
     public func body(content: Content) -> some View {
         content.overlay(animView.mask(content))

@@ -167,6 +167,33 @@ public extension View {
         )
             .onPreferenceChange(FramePreferenceKey.self, perform: onChange)
     }
+    
+    func cornerRadius(
+        _ radius: CGFloat,
+        corners: UIRectCorner
+    ) -> some View {
+        clipShape(RoundedCorner(radius: radius, corners: corners))
+    }
+    
+    func flippedVertically() -> some View {
+        self.rotation3DEffect(.degrees(180), axis: (x: 1, y: 0, z: 0))
+    }
+    
+    func flippedHorizontally() -> some View {
+        self.rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+    }
+}
+
+private struct RoundedCorner: Shape {
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(
+        in rect: CGRect
+    ) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
 }
 
 private struct SizePreferenceKey: PreferenceKey {
