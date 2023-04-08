@@ -34,6 +34,8 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
             guard isConnectedToInternet() else {
                 // Should Show Network disclaimer
                 // load offline List
+                
+                state.shouldPaginate.toggle()
                 state.viewState = .offline(description: "")
                 return
             }

@@ -57,5 +57,8 @@ final class Preferences {
     
     @UserDefault(kAppRootView)
     var rootView: AppRootView? = .splash
+    
+    @UserDefault(kAppIsNetworkReachable)
+    var isNetworkReachable: Bool = true
 }
 
