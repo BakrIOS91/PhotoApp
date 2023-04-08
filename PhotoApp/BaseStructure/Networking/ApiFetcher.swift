@@ -27,7 +27,7 @@ public final class APIFetcher: Fetcher {
             //Request
             let urlRequest = generateUrlRequest(url: url, request: request)
             // response
-            guard let (data, response) = try? await URLSession.shared.data(for: urlRequest) else { return .failure(.noData)}
+            guard let (data, response) = try? await URLSession.shared.data(for: urlRequest) else { return .failure(.invalidJSON("Invalid JSON"))}
             
             guard let response = response as? HTTPURLResponse else {
                 return .failure(.nonHTTPResponse)

@@ -28,7 +28,7 @@ public extension BaseRequestProtocol {
     var apiPath: String { return "/v2"}
     var headers: [String: String] { return [:] }
     var baseHeaders : [String:String] { return defaultHeaders }
-    var requestTimeOut: Float { return 30 }
+    var requestTimeOut: Float { return 5 }
     var httpMethod: HTTPMethod { return .GET }
     var parameters: Parameters? { return [:] }
 }
