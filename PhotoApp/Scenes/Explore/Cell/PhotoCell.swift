@@ -22,7 +22,12 @@ struct PhotoCell: View {
                     }
                     .loadDiskFileSynchronously()
                     .cacheOriginalImage()
+                
                     .fade(duration: 0.25)
+                    .resizable()
+                    .scaledToFill()
+            } fallbackContent: {
+                Image.imagePlaceholder
                     .resizable()
                     .scaledToFill()
             }

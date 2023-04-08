@@ -60,5 +60,8 @@ final class Preferences {
     
     @UserDefault(kAppIsNetworkReachable)
     var isNetworkReachable: Bool = true
+    
+    @UserDefault(kAppOfflinePhotosList)
+    var offlinePhotosList: [PhotoModel] = []
 }
 

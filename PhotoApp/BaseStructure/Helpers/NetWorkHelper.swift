@@ -10,10 +10,6 @@ protocol NetworkHelper: InternetConnectionChecker {
 extension NetworkHelper {
     func failHandler(_ error: Error) -> ViewState {
         
-        guard isConnectedToInternet() else {
-            return .offline(description: "Please Connect to the internet to enjoy our service")
-        }
-        
         guard let error = error as? NetworkError else {
            return .unexpected(description: "UnExpected")
         }

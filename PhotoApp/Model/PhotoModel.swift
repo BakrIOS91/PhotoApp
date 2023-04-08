@@ -29,6 +29,7 @@ struct PhotoModel: Codable {
     )
     
     static let adModel: Self = .init(
+        downloadURL: "",
         isAdModel: true
     )
 }

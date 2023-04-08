@@ -9,7 +9,7 @@ import SwiftUI
 
 
 class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.Action>, NetworkHelper {
-    
+    @Preference(\.offlinePhotosList) var offlinePhotosList
     struct State {
         var viewState: ViewState = .loading
         var pageIndex: Int = 0
@@ -35,11 +35,14 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
                 // Should Show Network disclaimer
                 // load offline List
                 
-                state.shouldPaginate.toggle()
-                state.viewState = .offline(description: "")
+                state.shouldPaginate = false
+                state.photoList = offlinePhotosList.filter({ $0.downloadURL != nil })
+                state.viewState = .loaded
                 return
             }
             
+            state.shouldPaginate = true
+
             if atPage == .first {
                 if state.photoList.isEmpty {
                     state.viewState = .loading
@@ -57,11 +60,10 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
             if let photos = response {
                 if state.pageIndex == 0 , photos.isEmpty {
                     state.viewState = .noData(description: "")
-                    state.photoList.removeAll()
+                    updateItems([])
                 } else {
-                    if state.pageIndex == 0 { state.photoList.removeAll() }
-                    state.photoList.append(contentsOf: photos.insertingAdPlaceholder(.adModel, afterEveryNthElement: 5))
-                    state.photoList.append(.adModel)
+                    if state.pageIndex == 0 { updateItems([]) }
+                    updateItems(photos.insertingAdPlaceholder(.adModel, afterEveryNthElement: 5))
                     state.viewState = .loaded
                 }
             } else {
@@ -74,5 +76,18 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
         case .didSelectPhoto(let article):
             break
         }
+    }
+    
+    fileprivate func updateItems(_ list: [PhotoModel]) {
+        guard !list.isEmpty else {
+            state.photoList.removeAll()
+            offlinePhotosList.removeAll()
+            return
+        }
+        
+        state.photoList.append(contentsOf: list)
+        offlinePhotosList.append(contentsOf: list)
+        debugPrint(state.photoList.map({$0.isAdModel}))
+        debugPrint(Preferences.shared.offlinePhotosList.map({$0.isAdModel}))
     }
 }

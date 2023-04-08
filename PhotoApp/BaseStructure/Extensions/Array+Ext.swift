@@ -18,6 +18,12 @@ extension Array {
             }
         }
         
+        // Insert adPlaceholder at the end if necessary
+                if self.count % 2 == 0 {
+                    result.append(adPlaceholder)
+                }
+                
+        
         return result
     }
 }
