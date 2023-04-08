@@ -33,25 +33,25 @@ struct Refresher<Content: View>: View {
                 progressView
                     .scaleEffect(scrollDelgate.isEligble ? 1 : 0.001)
                     .animation(.easeInOut(duration: 0.2), value: scrollDelgate.isEligble)
-//                    .overlay (
-//                        VStack(spacing: 10) {
-//                            Image(systemName: "arrow.down")
-//                                .font(.boldWithSize14)
-//                                .foregroundColor(.white)
-//                                .rotationEffect(.init(degrees: scrollDelgate.progress * 180))
-//                                .padding(8)
-//                                .background(
-//                                    Circle()
-//                                        .foregroundColor(Color.black)
-//                                )
-//                            
-//                            Text(Str.commonPullToRefresh.key)
-//                                .font(.boldWithSize14)
-//                                .foregroundColor(.primary)
-//                        }
-//                        .opacity(scrollDelgate.isEligble ? 0 : 1)
-//                        .animation(.easeInOut(duration: 0.25), value: scrollDelgate.isEligble)
-//                    )
+                    .overlay (
+                        VStack(spacing: 10) {
+                            Image(systemName: "arrow.down")
+                                .font(.boldWithSize14)
+                                .foregroundColor(.white)
+                                .rotationEffect(.init(degrees: scrollDelgate.progress * 180))
+                                .padding(8)
+                                .background(
+                                    Circle()
+                                        .foregroundColor(Color.black)
+                                )
+                            
+                            Text(Str.commonPullToRefresh.key)
+                                .font(.boldWithSize14)
+                                .foregroundColor(.primary)
+                        }
+                        .opacity(scrollDelgate.isEligble ? 0 : 1)
+                        .animation(.easeInOut(duration: 0.25), value: scrollDelgate.isEligble)
+                    )
                     .frame(height: 50 * scrollDelgate.progress)
                     .opacity(scrollDelgate.progress)
                     .offset(y: scrollDelgate.isEligble ? -(scrollDelgate.contentOffset < 0 ? 0 : scrollDelgate.contentOffset) : -(scrollDelgate.scrollOffset < 0 ? 0 : scrollDelgate.scrollOffset))

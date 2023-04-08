@@ -6,22 +6,29 @@
 //
 
 import Foundation
+import SwiftUI
+
 struct PhotoModel: Codable {
-    var id, author: String?
+    var id: UUID = UUID()
+    var author: String?
     var width, height: Int?
     var url, downloadURL: String?
+    var isAdModel: Bool = false
 
     enum CodingKeys: String, CodingKey {
-        case id, author, width, height, url
+        case  author, width, height, url
         case downloadURL = "download_url"
     }
     
     static let fake: Self = .init(
-        id: "0",
         author: "Alejandro Escamilla",
         width: 5000,
         height: 3333,
         url: "https://unsplash.com/photos/yC-Yzbqy7PY",
         downloadURL: "https://picsum.photos/id/0/5000/3333"
+    )
+    
+    static let adModel: Self = .init(
+        isAdModel: true
     )
 }

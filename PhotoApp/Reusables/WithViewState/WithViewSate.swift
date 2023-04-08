@@ -29,9 +29,7 @@ struct WithViewState<Content: View, LoadingContent: View>: View {
         case .loaded:
             content
                 .if(isRefreshable) { view in
-                    Refresher {
-                        view
-                    } onRefresh: {
+                    view.refreshable {
                         retryHandler()
                     }
                 }
@@ -39,9 +37,7 @@ struct WithViewState<Content: View, LoadingContent: View>: View {
         case .loading:
             loadingContent
                 .if(isRefreshable) { view in
-                    Refresher {
-                        view
-                    } onRefresh: {
+                    view.refreshable {
                         retryHandler()
                     }
                 }

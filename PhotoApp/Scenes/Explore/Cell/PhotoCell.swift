@@ -57,17 +57,3 @@ struct PhotoCell_Previews: PreviewProvider {
         PhotoCell(model: .fake)
     }
 }
-
-struct ShortRectangle: Shape {
-    var offset: CGFloat = 50
-
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        path.move(to: CGPoint(x: rect.minX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.minX + offset, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
-        path.closeSubpath()
-        return path
-    }
-}

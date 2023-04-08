@@ -12,8 +12,9 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
     
     struct State {
         var viewState: ViewState = .loading
-        var pageIndex: Int = 1
+        var pageIndex: Int = 0
         var photoList: [PhotoModel] = []
+        var shouldPaginate = true
     }
     
     enum Action {
@@ -40,23 +41,24 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
                 if state.photoList.isEmpty {
                     state.viewState = .loading
                 }
-                state.pageIndex = 1
+                state.pageIndex = 0
             } else {
                 state.pageIndex += 1
             }
             
             Task { [pageIndex = state.pageIndex] in
-                await PhotoServices.shared.getPhotosList(pageIndex)
+                await trigger(.photoListResponse(PhotoServices.shared.getPhotosList(pageIndex)))
             }
             
         case .photoListResponse(.success(let response)):
             if let photos = response {
-                if state.pageIndex == 1 , photos.isEmpty {
+                if state.pageIndex == 0 , photos.isEmpty {
                     state.viewState = .noData(description: "")
                     state.photoList.removeAll()
                 } else {
-                    if state.pageIndex == 1 { state.photoList.removeAll() }
-                    state.photoList.append(contentsOf: photos)
+                    if state.pageIndex == 0 { state.photoList.removeAll() }
+                    state.photoList.append(contentsOf: photos.insertingAdPlaceholder(.adModel, afterEveryNthElement: 5))
+                    state.photoList.append(.adModel)
                     state.viewState = .loaded
                 }
             } else {
@@ -65,9 +67,9 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
         case .photoListResponse(.failure(let error)):
             state.viewState = failHandler(error)
         case .getNextPageIfNeeded:
-            <#code#>
+            trigger(.fetchPhotos(atPage: .next))
         case .didSelectPhoto(let article):
-            <#code#>
+            break
         }
     }
 }

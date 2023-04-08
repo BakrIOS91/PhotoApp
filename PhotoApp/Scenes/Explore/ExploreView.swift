@@ -13,17 +13,55 @@ struct ExploreView: View {
     var body: some View {
         NavigationView {
             WithViewState(
-                viewModel.state.viewsState,
+                viewModel.state.viewState,
                 isRefreshable: true) {
-                    PhotoCell(model: .fake)
+                    ScrollView(showsIndicators: false) {
+                        LazyVStack(spacing: 20) {
+                            ForEach(viewModel.state.photoList, id: \.id) { photoModel in
+                                if !photoModel.isAdModel {
+                                    Button {
+                                        
+                                    } label: {
+                                        PhotoCell(model: photoModel)
+
+                                    }
+                                    .buttonStyle(.plain)
+                                } else {
+                                    AdsCell()
+                                        .frame(width: 200, height: 200)
+                                }
+                            }
+                            
+                            if viewModel.state.shouldPaginate {
+                                ZStack {
+                                    ProgressView()
+                                        .padding(30)
+                                        .onAppear {
+                                            viewModel.trigger(.fetchPhotos(atPage: .next))
+                                        }
+                                }
+                            }
+                        }
+                    }
+                   
                     
                 } loadingContent: {
-                    
+                    ScrollView(showsIndicators: false){
+                        VStack(spacing: 20){
+                            ForEach(1...10, id: \.self) { _ in
+                                PhotoCell(model: .fake)
+                                    .shimmed
+                            }
+                        }
+                    }
                 } retryHandler: {
-                    
+                    viewModel.trigger(.fetchPhotos(atPage: .first))
                 }
+                .padding(.top, 20)
                 .navigationTitle(Str.tbExplore.key)
-                .navigationBarTitleDisplayMode(.inline)
+                .onAppear {
+                    viewModel.trigger(.fetchPhotos(atPage: .first))
+                }
                 
         }
     }

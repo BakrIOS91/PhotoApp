@@ -15,17 +15,13 @@ struct HomeTabView: View {
         TabView {
             Unwrap(viewModel.state.exploreViewModel){
                 ExploreView(viewModel: $0)
-            } fallbackContent: {
-                UnImplmentedView()
             }
-                .tabItem {
-                    Label(Str.tbExplore.key, systemImage: "map.fill")
-                }
+            .tabItem {
+                Label(Str.tbExplore.key, systemImage: "map.fill")
+            }
             
             Unwrap(viewModel.state.settingViewModel){
                 SettingView(viewModel: $0)
-            } fallbackContent: {
-                UnImplmentedView()
             }
             .tabItem {
                 Label(Str.tbSettings.key, systemImage: "gear")
