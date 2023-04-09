@@ -13,19 +13,29 @@ struct AppMasterView: View {
     
     var body: some View {
         LocalizedContentView {
-            switch rootView {
+            switch rootView ?? .splash {
             case .splash:
-                UnImplmentedView()
+                Unwrap(viewModel.state.splashViewModel) {
+                    SplashView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             case .language:
-                UnImplmentedView()
+                Unwrap(viewModel.state.languageSelectionViewModel) {
+                    LanguageSelectionView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             case .home:
-                UnImplmentedView()
-            default:
-                UnImplmentedView()
+                Unwrap(viewModel.state.homeTabViewModel) {
+                    HomeTabView(viewModel: $0)
+                } fallbackContent: {
+                    UnImplmentedView()
+                }
             }
         }
-        .onAppear {
-            viewModel.trigger(.onAppear)
+        .onChange(of: rootView) { rootView in
+            viewModel.trigger(.loadView(rootView))
         }
     }
 }

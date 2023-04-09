@@ -22,6 +22,7 @@ public class NetworkMonitor {
     public func startMonitoring() {
         monitor.pathUpdateHandler = { [weak self] path in
             self?.status = path.status
+            Preferences.shared.isNetworkReachable = (path.status == .satisfied)
             self?.isReachableOnCellular = path.isExpensive
         }
         monitor.start(queue: queue)

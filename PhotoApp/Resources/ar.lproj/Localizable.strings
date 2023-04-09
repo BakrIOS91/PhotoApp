@@ -25,3 +25,14 @@
 "ls_Please_Choose_Language" = "يرجى اختيار اللغة المفضلة لديك";
 "en" = "الإنجليزية";
 "ar" = "العربية";
+
+// MARK: Home Tab View
+"tb_Explore" = "استكشاف";
+"tb_Settings" = "الإعدادات";
+
+// MARK: Setting View
+"settings_CurrentLanguages" = "اللغه الحاليه";
+
+//MARK: - Photo Detailed View
+"detailsView" = "التفاصيل";
+

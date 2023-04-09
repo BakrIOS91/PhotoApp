@@ -13,6 +13,8 @@ public enum Str {
   public static let commonRetry = LocalizedString(table: "Localizable", lookupKey: "common_Retry")
   /// unImplemented
   public static let commonUnImplemented = LocalizedString(table: "Localizable", lookupKey: "common_UnImplemented")
+  /// Detailed View
+  public static let detailsView = LocalizedString(table: "Localizable", lookupKey: "detailsView")
   /// English
   public static let en = LocalizedString(table: "Localizable", lookupKey: "en")
   /// Please try different keyword
@@ -35,6 +37,12 @@ public enum Str {
   public static let errorYouAreOffline = LocalizedString(table: "Localizable", lookupKey: "error_You_Are_Offline")
   /// Please choose your desired Language
   public static let lsPleaseChooseLanguage = LocalizedString(table: "Localizable", lookupKey: "ls_Please_Choose_Language")
+  /// Current Language
+  public static let settingsCurrentLanguages = LocalizedString(table: "Localizable", lookupKey: "settings_CurrentLanguages")
+  /// Explore
+  public static let tbExplore = LocalizedString(table: "Localizable", lookupKey: "tb_Explore")
+  /// Settings
+  public static let tbSettings = LocalizedString(table: "Localizable", lookupKey: "tb_Settings")
 }
 
 // MARK: - Implementation Details
