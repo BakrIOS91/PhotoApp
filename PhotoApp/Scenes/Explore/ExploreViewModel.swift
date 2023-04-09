@@ -67,7 +67,7 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
                     updateItems([])
                 } else {
                     if state.pageIndex == 0 { updateItems([]) }
-                    updateItems(photos.insertingAdPlaceholder(.adModel, afterEveryNthElement: 5))
+                    updateItems(photos)
                     state.viewState = .loaded
                 }
             } else {
@@ -95,9 +95,9 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
             return
         }
         
-        state.photoList.append(contentsOf: list)
-        offlinePhotosList.append(contentsOf: list)
-        debugPrint(state.photoList.map({$0.isAdModel}))
-        debugPrint(Preferences.shared.offlinePhotosList.map({$0.isAdModel}))
+        state.photoList.append(contentsOf: list.insertingAdPlaceholder(.adModel, afterEveryNthElement: 5))
+        if offlinePhotosList.count < 20 {
+            offlinePhotosList.append(contentsOf: list)
+        }
     }
 }
