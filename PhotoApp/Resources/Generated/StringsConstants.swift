@@ -13,6 +13,8 @@ public enum Str {
   public static let commonRetry = LocalizedString(table: "Localizable", lookupKey: "common_Retry")
   /// unImplemented
   public static let commonUnImplemented = LocalizedString(table: "Localizable", lookupKey: "common_UnImplemented")
+  /// Detailed View
+  public static let detailsView = LocalizedString(table: "Localizable", lookupKey: "detailsView")
   /// English
   public static let en = LocalizedString(table: "Localizable", lookupKey: "en")
   /// Please try different keyword

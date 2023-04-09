@@ -15,17 +15,21 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
         var pageIndex: Int = 0
         var photoList: [PhotoModel] = []
         var shouldPaginate = true
+        
+        // viewmodel
+        var photoDetailedViewModel: PhotoDetailedViewModel?
     }
     
     enum Action {
         case fetchPhotos(atPage: PageIndex)
         case photoListResponse(Result<[PhotoModel]?, NetworkError>)
         case getNextPageIfNeeded
-        case didSelectPhoto(article: PhotoModel)
+        case didSelectPhoto(Image?, Color?)
     }
     
     init() {
         super.init(state: .init())
+        trigger(.fetchPhotos(atPage: .first))
     }
     
     override func trigger(_ action: Action) {
@@ -73,8 +77,14 @@ class ExploreViewModel: BaseViewModel<ExploreViewModel.State, ExploreViewModel.A
             state.viewState = failHandler(error)
         case .getNextPageIfNeeded:
             trigger(.fetchPhotos(atPage: .next))
-        case .didSelectPhoto(let article):
-            break
+        case .didSelectPhoto(let image, let color):
+            guard let selectedImage = image,
+                  let selectedImageAverageColor = color
+            else {
+                return
+            }
+            
+            state.photoDetailedViewModel = .init(selectedImage: selectedImage, selectedImageAverageColor: selectedImageAverageColor)
         }
     }
     

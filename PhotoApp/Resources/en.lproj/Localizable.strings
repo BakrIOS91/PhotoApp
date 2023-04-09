@@ -32,3 +32,6 @@
 
 // MARK: Setting View
 "settings_CurrentLanguages" = "Current Language";
+
+//MARK: - Photo Detailed View
+"detailsView" = "Detailed View";

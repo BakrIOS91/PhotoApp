@@ -12,6 +12,7 @@ struct PhotoAppApp: App {
     @Preference(\.locale) var locale
     
     init(){
+       configureNavigationBarAppearance()
         NetworkMonitor.shared.startMonitoring()
         self.locale = Locale(identifier: Bundle.main.preferredLocalizations.first ?? "en")
     }
@@ -20,5 +21,14 @@ struct PhotoAppApp: App {
         WindowGroup {
             AppMasterView(viewModel: .init())
         }
+    }
+    
+    fileprivate func configureNavigationBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.backgroundColor = .white
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 }

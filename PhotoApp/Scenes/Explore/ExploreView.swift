@@ -20,13 +20,10 @@ struct ExploreView: View {
                         LazyVStack(spacing: 20) {
                             ForEach(viewModel.state.photoList, id: \.id) { photoModel in
                                 if !photoModel.isAdModel {
-                                    Button {
-                                        
-                                    } label: {
-                                        PhotoCell(model: photoModel)
-
+                                   
+                                    PhotoCell(model: photoModel){ image, color in
+                                        viewModel.trigger(.didSelectPhoto(image, color))
                                     }
-                                    .buttonStyle(.plain)
                                 } else {
                                     AdsCell()
                                         .frame(width: 200, height: 200)
@@ -60,9 +57,6 @@ struct ExploreView: View {
                 }
                 .padding(.top, 20)
                 .navigationTitle(Str.tbExplore.key)
-                .onAppear {
-                    viewModel.trigger(.fetchPhotos(atPage: .first))
-                }
                 .if(!isNetworkReachable) {
                     $0.navigationBarItems(
                         trailing:
@@ -76,6 +70,9 @@ struct ExploreView: View {
 
                     )
 
+                }
+                .navigation(item: $viewModel.state.photoDetailedViewModel) {
+                    PhotoDetailedView(viewModel: $0)
                 }
                 
         }

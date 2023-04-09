@@ -10,6 +10,9 @@ import Kingfisher
 
 struct PhotoCell: View {
     var model: PhotoModel
+    @State private var retrievedImage: Image?
+    @State private var averageColor: Color?
+    var onTapAction: ((Image?, Color?) -> Void)?
         
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -20,12 +23,20 @@ struct PhotoCell: View {
                             .foregroundColor(.appBackground)
                             .shimmed
                     }
-                    .loadDiskFileSynchronously()
                     .cacheOriginalImage()
-                
+                    .onSuccess({ result in
+                        if let cgImage = result.image.cgImage {
+                            let image = UIImage(cgImage: cgImage)
+                            self.retrievedImage = image.suImage
+                            self.averageColor = image.averageColor?.suColor
+                        }
+                    })
                     .fade(duration: 0.25)
                     .resizable()
                     .scaledToFill()
+                    .onTapGesture {
+                        onTapAction?(retrievedImage, averageColor)
+                    }
             } fallbackContent: {
                 Image.imagePlaceholder
                     .resizable()

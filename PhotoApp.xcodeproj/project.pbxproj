@@ -37,6 +37,11 @@
 		3C19BC2F29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */; };
 		3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8529E04438008126EE /* HomeTabView.swift */; };
 		3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8729E04763008126EE /* HomeTabViewModel.swift */; };
+		3C378F6C29E235FE00E1C176 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C378F6B29E235FE00E1C176 /* UIImageExtension.swift */; };
+		3C378F6E29E236CC00E1C176 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C378F6D29E236CC00E1C176 /* UIColor+Ext.swift */; };
+		3C378F7129E237BD00E1C176 /* PhotoDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C378F7029E237BD00E1C176 /* PhotoDetailedView.swift */; };
+		3C378F7329E237C900E1C176 /* PhotoDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C378F7229E237C900E1C176 /* PhotoDetailedViewModel.swift */; };
+		3C378F7529E23BC900E1C176 /* UINavigationBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C378F7429E23BC900E1C176 /* UINavigationBar+Ext.swift */; };
 		3C43CA3029E04A9E00300777 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA2F29E04A9E00300777 /* SettingView.swift */; };
 		3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */; };
 		3C6E52E429E0F2D900DD51F1 /* vodafone_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */; };
@@ -132,6 +137,11 @@
 		3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C36CC8529E04438008126EE /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		3C36CC8729E04763008126EE /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		3C378F6B29E235FE00E1C176 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		3C378F6D29E236CC00E1C176 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		3C378F7029E237BD00E1C176 /* PhotoDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailedView.swift; sourceTree = "<group>"; };
+		3C378F7229E237C900E1C176 /* PhotoDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailedViewModel.swift; sourceTree = "<group>"; };
+		3C378F7429E23BC900E1C176 /* UINavigationBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Ext.swift"; sourceTree = "<group>"; };
 		3C43CA2F29E04A9E00300777 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_2.gif; sourceTree = "<group>"; };
@@ -284,6 +294,7 @@
 		3C15FF9329DF8B1D00C0F85C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3C378F6F29E237AD00E1C176 /* PhotoDetailedView */,
 				3CC9E1FD29E0A1F400725FDB /* Explore */,
 				3C43CA2E29E04A7E00300777 /* Settings */,
 				3C36CC8429E0440D008126EE /* HomeTabBar */,
@@ -391,6 +402,15 @@
 			path = HomeTabBar;
 			sourceTree = "<group>";
 		};
+		3C378F6F29E237AD00E1C176 /* PhotoDetailedView */ = {
+			isa = PBXGroup;
+			children = (
+				3C378F7029E237BD00E1C176 /* PhotoDetailedView.swift */,
+				3C378F7229E237C900E1C176 /* PhotoDetailedViewModel.swift */,
+			);
+			path = PhotoDetailedView;
+			sourceTree = "<group>";
+		};
 		3C43CA2E29E04A7E00300777 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -469,6 +489,9 @@
 				3CC5721729DF85BF00B870EA /* DateFormater+Ext.swift */,
 				3CC5721829DF85BF00B870EA /* Data+Ext.swift */,
 				3C6E52EA29E0F4D500DD51F1 /* Array+Ext.swift */,
+				3C378F6B29E235FE00E1C176 /* UIImageExtension.swift */,
+				3C378F6D29E236CC00E1C176 /* UIColor+Ext.swift */,
+				3C378F7429E23BC900E1C176 /* UINavigationBar+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -725,6 +748,7 @@
 				3CC5723329DF85C000B870EA /* DateFormater+Ext.swift in Sources */,
 				3C15FF9A29DF8B4600C0F85C /* AppMasterView.swift in Sources */,
 				3CC5722229DF85C000B870EA /* ViewState.swift in Sources */,
+				3C378F7129E237BD00E1C176 /* PhotoDetailedView.swift in Sources */,
 				3CC5723029DF85C000B870EA /* View+Ext.swift in Sources */,
 				3C6E52EB29E0F4D500DD51F1 /* Array+Ext.swift in Sources */,
 				3CC5722E29DF85C000B870EA /* String+Ext.swift in Sources */,
@@ -732,11 +756,13 @@
 				3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */,
 				3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */,
 				3C15FF7129DF87FB00C0F85C /* StringsConstants.swift in Sources */,
+				3C378F6E29E236CC00E1C176 /* UIColor+Ext.swift in Sources */,
 				3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */,
 				3C15FF8C29DF8ABE00C0F85C /* Refresher.swift in Sources */,
 				3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */,
 				3CC5722829DF85C000B870EA /* Unwrap.swift in Sources */,
 				3CC5722729DF85C000B870EA /* UserDefaults.swift in Sources */,
+				3C378F6C29E235FE00E1C176 /* UIImageExtension.swift in Sources */,
 				3CC5721D29DF85BF00B870EA /* NetworkMonitor.swift in Sources */,
 				3CC5722029DF85C000B870EA /* LocalPreview.swift in Sources */,
 				3C15FF7229DF87FB00C0F85C /* ColorsConstants.swift in Sources */,
@@ -751,10 +777,12 @@
 				3CC5722329DF85C000B870EA /* NetWorkHelper.swift in Sources */,
 				3CC5721F29DF85C000B870EA /* BaseViewModel.swift in Sources */,
 				3CC5722429DF85C000B870EA /* Helpers.swift in Sources */,
+				3C378F7329E237C900E1C176 /* PhotoDetailedViewModel.swift in Sources */,
 				3CC9E21029E0C48000725FDB /* PhotoService.swift in Sources */,
 				3C19BC1229DF852E002127A4 /* PhotoAppApp.swift in Sources */,
 				3CC5721A29DF85BF00B870EA /* NetworkEnums.swift in Sources */,
 				3CC9E20729E0AC6200725FDB /* PhotoCell.swift in Sources */,
+				3C378F7529E23BC900E1C176 /* UINavigationBar+Ext.swift in Sources */,
 				3CC9E20129E0A22900725FDB /* ExploreView.swift in Sources */,
 				3CC9E20029E0A22900725FDB /* ExploreViewModel.swift in Sources */,
 				3CC5722B29DF85C000B870EA /* Optional+Ext.swift in Sources */,
