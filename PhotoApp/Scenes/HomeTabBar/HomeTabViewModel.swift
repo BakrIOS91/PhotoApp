@@ -11,7 +11,6 @@ class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.A
     struct State {
         
         //ViewModels
-        var settingViewModel: SettingsViewModel?
         var exploreViewModel: ExploreViewModel?
     }
     
@@ -31,7 +30,6 @@ class HomeTabViewModel: BaseViewModel<HomeTabViewModel.State, HomeTabViewModel.A
     }
     
     fileprivate func loadViewModels() {
-        state.settingViewModel = .init()
         state.exploreViewModel = .init()
     }
 }

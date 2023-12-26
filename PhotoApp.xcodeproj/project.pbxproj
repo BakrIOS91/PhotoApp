@@ -37,8 +37,6 @@
 		3C19BC2F29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */; };
 		3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8529E04438008126EE /* HomeTabView.swift */; };
 		3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36CC8729E04763008126EE /* HomeTabViewModel.swift */; };
-		3C43CA3029E04A9E00300777 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA2F29E04A9E00300777 /* SettingView.swift */; };
-		3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */; };
 		3C6E52E429E0F2D900DD51F1 /* vodafone_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */; };
 		3C6E52E529E0F2D900DD51F1 /* vodafone_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E229E0F2D900DD51F1 /* vodafone_1.gif */; };
 		3C6E52E729E0F30300DD51F1 /* vodafone_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C6E52E629E0F30300DD51F1 /* vodafone_3.gif */; };
@@ -132,8 +130,6 @@
 		3C19BC2E29DF852F002127A4 /* PhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C36CC8529E04438008126EE /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		3C36CC8729E04763008126EE /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
-		3C43CA2F29E04A9E00300777 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3C6E52E129E0F2D900DD51F1 /* vodafone_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_2.gif; sourceTree = "<group>"; };
 		3C6E52E229E0F2D900DD51F1 /* vodafone_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_1.gif; sourceTree = "<group>"; };
 		3C6E52E629E0F30300DD51F1 /* vodafone_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vodafone_3.gif; sourceTree = "<group>"; };
@@ -285,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				3CC9E1FD29E0A1F400725FDB /* Explore */,
-				3C43CA2E29E04A7E00300777 /* Settings */,
 				3C36CC8429E0440D008126EE /* HomeTabBar */,
 				3C15FFA129DF90C100C0F85C /* Language Selection */,
 				3C15FF9C29DF8E6D00C0F85C /* Splash */,
@@ -389,15 +384,6 @@
 				3C36CC8729E04763008126EE /* HomeTabViewModel.swift */,
 			);
 			path = HomeTabBar;
-			sourceTree = "<group>";
-		};
-		3C43CA2E29E04A7E00300777 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				3C43CA2F29E04A9E00300777 /* SettingView.swift */,
-				3C43CA3129E04BFE00300777 /* SettingsViewModel.swift */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		3C6E52DF29E0F2CE00DD51F1 /* Gifs */ = {
@@ -728,13 +714,11 @@
 				3CC5723029DF85C000B870EA /* View+Ext.swift in Sources */,
 				3C6E52EB29E0F4D500DD51F1 /* Array+Ext.swift in Sources */,
 				3CC5722E29DF85C000B870EA /* String+Ext.swift in Sources */,
-				3C43CA3029E04A9E00300777 /* SettingView.swift in Sources */,
 				3C36CC8829E04763008126EE /* HomeTabViewModel.swift in Sources */,
 				3CC5723429DF85C000B870EA /* Data+Ext.swift in Sources */,
 				3C15FF7129DF87FB00C0F85C /* StringsConstants.swift in Sources */,
 				3C36CC8629E04438008126EE /* HomeTabView.swift in Sources */,
 				3C15FF8C29DF8ABE00C0F85C /* Refresher.swift in Sources */,
-				3C43CA3229E04BFE00300777 /* SettingsViewModel.swift in Sources */,
 				3CC5722829DF85C000B870EA /* Unwrap.swift in Sources */,
 				3CC5722729DF85C000B870EA /* UserDefaults.swift in Sources */,
 				3CC5721D29DF85BF00B870EA /* NetworkMonitor.swift in Sources */,
